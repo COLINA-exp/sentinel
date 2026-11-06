@@ -100,7 +100,8 @@ pub fn main() -> Result<()> {
         evt_writer.write(wf.event)?;
          wf_writer.write(wf.data)?;
     }
-    for channel in sensor_db.sensor_id {
+
+    for channel in sensor_db.channel_id {
         chn_writer.write(channel)?;
     }
 
